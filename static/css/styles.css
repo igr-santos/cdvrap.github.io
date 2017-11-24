@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Kavoon|Knewave|Lilita+One|Sedgwick+Ave+Display|Wendy+One');
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../img/cdvrap-bg.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.65;
+}
+
+.main {
+  padding: 0 60px;
+  position: absolute;
+  top: 0;
+}
+
+.caption {
+  display: flex;
+  align-items: center;
+  height: 250px;
+}
+.caption img.logo {
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+}
+.header .title {
+  font-family: 'Sedgwick Ave Display', cursive;
+  /* font-family: 'Lilita One', cursive; */
+  /* font-family: 'Knewave', cursive; */
+  /* font-family: 'Wendy One', sans-serif; */
+  /* font-family: 'Kavoon', cursive; */
+  background-color: #000;
+  color: #fff;
+  padding: 12px;
+  font-size: 20px;
+  letter-spacing: 10px;
+  display: inline-block;
+  margin: 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+}
+.footer p {
+  font: bold 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+@media (max-width: 480px) {
+  .bg {
+    background-image: repeating-linear-gradient(-45deg, silver, silver 10px, black 10px, black 12px, silver 12px);
+    opacity: 0.2;
+  }
+  .main {
+    width: 100%;
+    padding: 0;
+  }
+  .caption {
+    height: 150px;
+  }
+  .header .title {
+    padding: 8px;
+    font-size: 14px;
+  }
+  .footer p {
+    font-size: 12px;
+  }
+}
